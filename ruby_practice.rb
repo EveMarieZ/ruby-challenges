@@ -1,3 +1,7 @@
-puts "What is your name?"
-name = gets
-puts "Hello, #{name}!".chop
+if (2 + 2 == 4)
+	puts "All is right in the world."
+elsif (2 + 2 == 5)
+	puts "2 + 2 is greater than the sum of its parts."
+else
+	puts "All is not right in the world."
+end

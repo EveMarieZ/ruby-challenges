@@ -18,6 +18,15 @@ class Pet
 end
 
 class Ferret < Pet
+
+	@@total_ferrets = 0
+
+	def initialize
+		@@total_ferrets += 1
+	end
+
+	def self.current_count
+		puts "There are currently #{@@total_ferrets} instances of my Ferret class."
  
 	def squeal
 		return "squeeeeee"
@@ -57,6 +66,12 @@ puts "#{ferret_name} says #{my_ferret.squeal},
 #{parrot_name} says #{my_parrot.tweet}, 
 and #{chinchilla_name} says #{my_chinchilla.squeek}."
  
+#puts my_ferret.inspect
+#puts my_parrot.inspect
+#puts my_chinchilla.inspect
+
+Ferret.current_count
+puts Ferret.inspect
 puts my_ferret.inspect
-puts my_parrot.inspect
-puts my_chinchilla.inspect
+
+end

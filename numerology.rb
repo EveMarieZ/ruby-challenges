@@ -4,7 +4,7 @@ def determine_birth_number(birthdate)
 	number = number[0].to_i + number[1].to_i
 	if (number > 9) then
 		number = number.to_s
-		number[0].to_i _ + number[1].to_i
+		number[0].to_i + number[1].to_i
 	end
 	return number
 end
